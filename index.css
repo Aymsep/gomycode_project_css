@@ -274,6 +274,7 @@ main i{
     padding: 25px 25px 65px;
     margin-bottom: 165px;
     z-index: -1;
+    overflow: hidden;
 }
 
 .benefit{
@@ -327,10 +328,18 @@ main i{
  position: relative;
 }
 .left_bnf h1{
-    margin:-150px 0 15px;
+    margin:-200px 0 15px;
 }
 .left_bnf p{
     font-size:1.1rem;
+}
+
+.left_bnf i{
+    color: var(--primary-color);
+    font-size: 25rem;
+    position: absolute;
+    transform: translate(-50px,70px);
+
 }
 
 
