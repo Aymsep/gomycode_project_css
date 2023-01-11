@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Tajawal', sans-serif;
+}
+
+:root{
+    --primary-color:#00CCB1;
+    --secondary-color-600:#747474;
+    --secondary-color-light:#ababab;
+    --bg-btn:#3d83df;
+    --color-btn:white;
+}
+
+p{
+    font-size: 1.2rem;
+    color: var(--secondary-color-600);
+}
+
+h1{
+    color: var(--primary-color);
+    font-weight: 100;
+    font-size:2.4rem;
+    
+}
+
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+
+/****************NAVBAR STYLES************/
+
+
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 60px;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    margin-bottom: 120px;
+}
+
+/***LOGO**/
+
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo label{
+    color: var(--primary-color);
+}
+
+.logo label span{
+    color: var(--secondary-color-light);
+}
+
+/*NAVBAR LINKS*/
+
+.navbar_links{
+    display: flex;
+    gap: 19px;
+}
+
+.navbar_links li a{
+    font-weight:bold;
+    color: var(--secondary-color-light);
+}
+
+.navbar_links li #active{
+    color: var(--primary-color);
+}
+
+.navbar_links li a:hover{
+    color: var(--primary-color);
+}
+
+/**************MAIN CONTAINER******************/
+main h1{
+    text-align: center;
+}
+.descpriton_sides{
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+
+
+
+
