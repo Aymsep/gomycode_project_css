@@ -55,20 +55,29 @@ button{
 }
 
 .lg{
-    font-size:18px;
+    font-size:15px;
+    padding: 10px 20px;
 }
 
 /****************NAVBAR STYLES************/
 
 
 .navbar{
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    background-color: white;
     display: flex;
-    justify-content:space-between;
+    position: fixed;
+    justify-content:space-around;
     align-items: center;
-    height: 60px;
     text-transform: capitalize;
     letter-spacing: .5px;
     margin-bottom: 120px;
+
 }
 
 /***LOGO**/
@@ -111,7 +120,9 @@ button{
 }
 
 /**************MAIN CONTAINER******************/
-
+main{
+    margin-top:130px;
+}
 main h1{
     text-align: center;
 }
@@ -349,6 +360,7 @@ main i{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 25px;
+    margin-bottom: 100px;
 }
 
 .city{
@@ -381,4 +393,36 @@ main i{
     box-shadow: 10px 10px 40px -16px rgba(0,0,0,0.62);
     -webkit-box-shadow: 10px 10px 40px -16px rgba(0,0,0,0.62);
     -moz-box-shadow: 10px 10px 40px -16px rgba(0,0,0,0.62);
+}
+
+
+/*******************JOIN US*****************/
+
+.joinus{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.joinus h1{
+    margin-bottom:10px;
+    color: black;
+    font-size: 2.1rem;
+}
+
+
+
+/***************FOOTER*********************/
+footer{
+    text-align:center;
+    padding-bottom: 10px;
+}
+footer span{
+    color: var(--secondary-color-600);
+    font-size:.9rem;
+}
+footer span a{
+    color: var(--bg-btn);
+    text-transform: capitalize;
+}
+footer span a:hover{
+    text-decoration: underline;
 }
