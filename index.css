@@ -43,8 +43,20 @@ body{
     overflow-x: hidden;
 }
 
+button{
+    color: white;
+    background-color:var(--bg-btn);
+    border-radius:4px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size:12px;
+    font-weight: bold;
+    letter-spacing: .6px;
+}
 
-
+.lg{
+    font-size:18px;
+}
 
 /****************NAVBAR STYLES************/
 
@@ -241,14 +253,16 @@ main i{
 
 
 /********************BENEFITS******************/
+
+
 .benefits{
     background-color:#d7f6f5;
     position: absolute;
     left: 0;
     right: 0;
-    padding: 25px;
+    padding: 25px 25px 65px;
     margin-bottom: 165px;
-    overflow: hidden;
+    z-index: -1;
 }
 
 .benefit{
@@ -260,9 +274,6 @@ main i{
     margin: 0 auto;
     gap:50px;
 }
-
-
-
 
 
 .right_bnf{
@@ -310,10 +321,64 @@ main i{
 .left_bnf p{
     font-size:1.1rem;
 }
-.left_bnf i{
-    position: absolute;
+
+
+.improve{
+    z-index: 10;
+    margin-top: 660px;
+    margin-bottom: 65px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+.improve h2{
+    width: min(550px,100%);
+    margin: 0 auto;
     color: var(--primary-color);
-    font-size:40rem;
-    top: 5rem;
-    right: 4rem;
+}
+
+.improve p{
+    width: min(550px,100%);
+    margin: 10px auto;
+    font-size: 1.1rem;
+}
+
+
+
+/*******************CITIES******************/
+.cities{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.city{
+    width: 330px;
+    height: 350px;
+    border-radius: 6px;
+    transition: box-shadow .1s ease-in-out;
+}
+
+.city img{
+    width: 100%;
+    height: 80%;
+    margin-bottom: 13px;
+    border-radius: 6px 6px 0 0;
+}
+
+.city span{
+    padding-left: 8px;
+    font-size: 1.3rem;
+    color: var(--secondary-color-600);
+    font-weight: bold;
+}
+
+.city button{
+    float:right;
+    margin-right:12px;
+}
+
+.city:hover{
+    box-shadow: 10px 10px 40px -16px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 10px 10px 40px -16px rgba(0,0,0,0.62);
+    -moz-box-shadow: 10px 10px 40px -16px rgba(0,0,0,0.62);
 }
